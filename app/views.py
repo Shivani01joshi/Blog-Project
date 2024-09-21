@@ -80,6 +80,11 @@ def update_post(request,id):
 def delete_post(request,id):
     post = get_object_or_404(Blog, id=id)
     post.delete()
+    print("Hello Gitmaster shivani")
     messages.success(request,"Post has been deleted")
         #return redirect('home')
     return render(request, 'home.html')
+    
+
+
+
